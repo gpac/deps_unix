@@ -4,9 +4,9 @@ echo "Compilation of OpenHEVC"
 
 branch="ffmpeg_update"
 
-git submodule update --init
+#git submodule update --init
 
-cd ./openhevc/
+cd ./openHEVC/
 
 git checkout --force "$branch"
 git fetch

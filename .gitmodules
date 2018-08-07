@@ -7,3 +7,7 @@
 [submodule "opensvc"]
 	path = opensvc
 	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/opensvc.git
+[submodule "openHEVC"]
+	path = openHEVC
+	url = https://github.com/OpenHEVC/openHEVC.git
+	branch = ffmpeg_update
