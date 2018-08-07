@@ -1,0 +1,9 @@
+[submodule "PlatinumSDK"]
+	path = PlatinumSDK
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/PlatinumSDK.git
+[submodule "avcap"]
+	path = avcap
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/avcap.git
+[submodule "opensvc"]
+	path = opensvc
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/opensvc.git
