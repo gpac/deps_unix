@@ -13,7 +13,7 @@ git fetch
 git reset --hard FETCH_HEAD
 
 make clean
-./configure --disable-debug --disable-iconv
+./configure --disable-debug --disable-iconv --enable-pic
 make openhevc-static || exit 1
 
 mkdir -p ../../gpac_public/extra_lib/lib/gcc
