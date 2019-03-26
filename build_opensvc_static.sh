@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cd opensvc/svcsvn/
-svn revert -R .
+#svn revert -R .
 patch -p0 < ../gpac_bb.patch
 
 is_64=`uname -a | grep 64`
