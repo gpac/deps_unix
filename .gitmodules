@@ -14,3 +14,6 @@
 [submodule "js"]
 	path = js
 	url = https://github.com/gpac-buildbot/js.git
+[submodule "OpenJPEG"]
+	path = OpenJPEG
+	url = https://github.com/gpac-buildbot/OpenJPEG.git
