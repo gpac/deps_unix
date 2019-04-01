@@ -11,3 +11,6 @@
 	path = openHEVC
 	url = https://github.com/OpenHEVC/openHEVC.git
 	branch = ffmpeg_update
+[submodule "js"]
+	path = js
+	url = https://github.com/gpac-buildbot/js.git
