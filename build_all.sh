@@ -27,7 +27,7 @@ cd ..
 
 
 cd js
-make -f Makefile.ref
+make -f Makefile.ref Linux_All_DBG.OBJ/libjs.a
 cp -av Linux_All_DBG.OBJ/libjs.a ../../gpac_public/extra_lib/lib/gcc/
 cd ..
 
