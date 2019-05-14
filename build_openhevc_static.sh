@@ -12,8 +12,13 @@ git checkout --force "$branch"
 git fetch
 git reset --hard FETCH_HEAD
 
-make clean
-./configure --disable-debug --disable-iconv --enable-pic
+if [ "$2" = "rebuild" ] || [ ! -f ffbuild/config.mak ] ; then
+
+  make clean
+  ./configure --disable-debug --disable-iconv --enable-pic
+
+fi
+
 make openhevc-static || exit 1
 
 mkdir -p ../../gpac_public/extra_lib/lib/gcc
