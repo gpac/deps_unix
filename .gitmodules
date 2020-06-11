@@ -1,19 +1,25 @@
 [submodule "PlatinumSDK"]
 	path = PlatinumSDK
 	url = https://github.com/gpac-buildbot/PlatinumSDK.git
+	ignore = dirty
 [submodule "avcap"]
 	path = avcap
 	url = https://github.com/gpac-buildbot/avcap.git
+	ignore = dirty
 [submodule "opensvc"]
 	path = opensvc
 	url = https://github.com/gpac-buildbot/opensvc.git
+	ignore = dirty
 [submodule "openHEVC"]
 	path = openHEVC
 	url = https://github.com/OpenHEVC/openHEVC.git
 	branch = ffmpeg_update
+	ignore = dirty
 [submodule "js"]
 	path = js
 	url = https://github.com/gpac-buildbot/js.git
+	ignore = dirty
 [submodule "OpenJPEG"]
 	path = OpenJPEG
 	url = https://github.com/gpac-buildbot/OpenJPEG.git
+	ignore = dirty
