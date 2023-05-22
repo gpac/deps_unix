@@ -11,9 +11,9 @@ if [ "$1" = "osx" ]; then
 fi
 
 
-cd PlatinumSDK/
-./BuildAndCopy2Public.sh "$PLAT_ARCH"
-cd ..
+#cd PlatinumSDK/
+#./BuildAndCopy2Public.sh "$PLAT_ARCH"
+#cd ..
 
 cd avcap
 ./BuildAndCopy2Public.sh "$ARCH"
