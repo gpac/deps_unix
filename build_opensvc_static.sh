@@ -24,9 +24,11 @@ cp CommonFiles/src/CMakeFiles/OpenSVCDec.dir/*.o temp/
 ar cr libOpenSVCDec.a temp/*.o
 ranlib libOpenSVCDec.a
 rm -rf temp
+
+mkdir -p ../../../gpac_public/extra_lib/include/OpenSVCDecoder
+cp CommonFiles/src/*.h ../../../gpac_public/extra_lib/include/OpenSVCDecoder
+
 mkdir -p ../../../gpac_public/extra_lib/lib/gcc
 cp libOpenSVCDec.a ../../../gpac_public/extra_lib/lib/gcc
+
 cd ..
-
-
-
