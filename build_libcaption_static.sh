@@ -13,7 +13,7 @@ git fetch
 git reset --hard FETCH_HEAD
 
 make clean
-cmake -DENABLE_RE2C=OFF .
+cmake -DENABLE_RE2C=OFF -DCMAKE_POSITION_INDEPENDENT_CODE=ON .
 make || exit 1
 
 
