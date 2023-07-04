@@ -7,3 +7,6 @@
 	url = https://github.com/OpenHEVC/openHEVC.git
 	branch = ffmpeg_update
 	ignore = dirty
+[submodule "libcaption"]
+	path = libcaption
+	url = https://github.com/szatmary/libcaption.git
