@@ -10,3 +10,4 @@
 [submodule "libcaption"]
 	path = libcaption
 	url = https://github.com/szatmary/libcaption.git
+	ignore = dirty
