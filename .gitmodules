@@ -11,3 +11,7 @@
 	path = libcaption
 	url = https://github.com/szatmary/libcaption.git
 	ignore = dirty
+[submodule "mpeghdec"]
+	path = mpeghdec
+	url = https://github.com/Fraunhofer-IIS/mpeghdec.git
+	ignore = dirty
