@@ -15,3 +15,15 @@
 	path = mpeghdec
 	url = https://github.com/Fraunhofer-IIS/mpeghdec.git
 	ignore = dirty
+[submodule "openssl"]
+	path = openssl
+	url = https://github.com/quictls/openssl.git
+	ignore = dirty
+[submodule "nghttp3"]
+	path = nghttp3
+	url = https://github.com/ngtcp2/nghttp3
+	ignore = dirty
+[submodule "ngtcp2"]
+	path = ngtcp2
+	url = https://github.com/ngtcp2/ngtcp2.git
+	ignore = dirty
