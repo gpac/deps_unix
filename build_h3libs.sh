@@ -4,7 +4,7 @@ echo "Building quictls"
 
 pushd openssl
 
-./config enable-tls1_3 enable-quic no-shared --prefix=$(pwd)/build/ --libdir=lib
+./config enable-tls1_3 enable-quic no-shared no-unit-test no-tests no-external-tests --prefix=$(pwd)/build/ --libdir=lib
 make -j4
 make install_sw
 
