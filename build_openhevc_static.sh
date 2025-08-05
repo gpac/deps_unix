@@ -12,10 +12,12 @@ git checkout --force "$branch"
 git fetch
 git reset --hard FETCH_HEAD
 
+git apply ../patches/effadce6c756247ea8bae32dc13bb3e6f464f0eb.patch
+
 if [ "$2" = "rebuild" ] || [ ! -f ffbuild/config.mak ] ; then
 
   make clean
-  ./configure --disable-debug --disable-iconv --enable-pic
+  ./configure --disable-debug --disable-iconv --enable-pic --extra-cflags="-Wno-attributes -Wno-array-bounds"
 
 fi
 
