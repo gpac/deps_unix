@@ -14,10 +14,16 @@ git reset --hard FETCH_HEAD
 
 git apply ../patches/effadce6c756247ea8bae32dc13bb3e6f464f0eb.patch
 
+EXTRA_CONF=""
+
+if [ "$1" = "arm" ] ; then
+  EXTRA_CONF=" --arch=arm --cpu=native  --disable-neon    --disable-armv6t2   --disable-armv6    --disable-armv5te  --disable-inline-asm "
+fi
+
 if [ "$2" = "rebuild" ] || [ ! -f ffbuild/config.mak ] ; then
 
   make clean
-  ./configure --disable-debug --disable-iconv --enable-pic --extra-cflags="-Wno-attributes -Wno-array-bounds"
+  ./configure --disable-debug --disable-iconv --enable-pic --extra-cflags="-Wno-attributes -Wno-array-bounds" $EXTRA_CONF
 
 fi
 
