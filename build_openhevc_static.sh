@@ -23,7 +23,7 @@ fi
 if [ "$2" = "rebuild" ] || [ ! -f ffbuild/config.mak ] ; then
 
   make clean
-  ./configure --disable-debug --disable-iconv --enable-pic --extra-cflags="-Wno-attributes -Wno-array-bounds" $EXTRA_CONF
+  ./configure --disable-debug --disable-iconv --enable-pic --extra-cflags="-Wno-attributes -Wno-array-bounds -Wno-error -Wno-incompatible-pointer-types -Wno-incompatible-function-pointer-types " $EXTRA_CONF
 
 fi
 
