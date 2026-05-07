@@ -2,13 +2,12 @@
 
 echo "Compilation of mpeghdec"
 
-branch="main"
-
 cd ./mpeghdec/
 
-git checkout --force "$branch"
-git fetch
-git reset --hard FETCH_HEAD
+# branch="main"
+# git checkout --force "$branch"
+# git fetch
+# git reset --hard FETCH_HEAD
 
 
 sed -i'.bak' -e 's/git@github.com:/https:\/\/github.com\//'  CMakeLists.txt
@@ -26,7 +25,7 @@ cmake --build build --parallel 4
 
 
 mkdir -p ../../gpac_public/extra_lib/include
-cp -av include/mpeghdecoder.h ../../gpac_public/extra_lib/include/
+cp -av include/mpeghdecoder.h include/mpeghexport.h ../../gpac_public/extra_lib/include/
 
 mkdir -p ../../gpac_public/extra_lib/lib/gcc
 cp -av build/lib/lib*.a ../../gpac_public/extra_lib/lib/gcc/

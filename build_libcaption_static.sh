@@ -2,15 +2,12 @@
 
 echo "Compilation of libcaption"
 
-branch="master"
-
-#git submodule update --init
-
 cd ./libcaption/
 
-git checkout --force "$branch"
-git fetch
-git reset --hard FETCH_HEAD
+# branch="master"
+# git checkout --force "$branch"
+# git fetch
+# git reset --hard FETCH_HEAD
 
 make clean
 cmake -DENABLE_RE2C=OFF -DCMAKE_POSITION_INDEPENDENT_CODE=ON .
