@@ -4,15 +4,7 @@ cd opensvc/svcsvn/
 #svn revert -R .
 patch -p0 < ../gpac_bb.patch
 
-is_64=`uname -a | grep 64`
-
-if test ! -z "$is_64" ; then
-echo "64 bit compilation of OpenSVC"
 cmake -DCMAKE_C_FLAGS=-fPIC .
-else
-echo "32 bit compilation of OpenSVC"
-cmake .
-fi
 
 make || exit 1
 mkdir temp
