@@ -15,10 +15,6 @@
 	path = mpeghdec
 	url = https://github.com/Fraunhofer-IIS/mpeghdec.git
 	ignore = dirty
-[submodule "openssl"]
-	path = openssl
-	url = https://github.com/quictls/openssl.git
-	ignore = dirty
 [submodule "nghttp3"]
 	path = nghttp3
 	url = https://github.com/ngtcp2/nghttp3
