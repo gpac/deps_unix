@@ -18,7 +18,7 @@ echo "Building ngtcp2"
 pushd ngtcp2
 
 autoreconf -i
-./configure PKG_CONFIG_PATH=$(pwd)/../openssl/build/lib/pkgconfig:$(pwd)/../nghttp3/build/lib/pkgconfig --with-gnutls --enable-static=yes --enable-shared=no -enable-lib-only=yes --with-pic=yes --prefix=$(pwd)/build
+./configure PKG_CONFIG_PATH=$(pwd)/../nghttp3/build/lib/pkgconfig --with-gnutls --enable-static=yes --enable-shared=no -enable-lib-only=yes --with-pic=yes --prefix=$(pwd)/build
 make -j4 check
 make install
 
